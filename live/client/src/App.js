@@ -22,6 +22,18 @@ function App() {
               <Route exact path="/room/:roomID" render={(routeArgs)=>(
                 <Room routeArgs={routeArgs}/>
               )}/>
+
+              <Route exact path="//" render={({history})=>(
+              <div>
+                  <CreateRoom history={history}/>
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aliquam cum voluptatibus sint quos necessitatibus fuga praesentium natus sed blanditiis accusamus, tenetur impedit laudantium aspernatur dolorem obcaecati, accusantium totam reprehenderit! */}
+              </div>
+            
+              )}/>
+
+              <Route exact path="/room/:roomID" render={(routeArgs)=>(
+                <Room routeArgs={routeArgs}/>
+              )}/>
           </div>
     </SocketContextProvider>
 
