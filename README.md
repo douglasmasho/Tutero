@@ -10,7 +10,7 @@ This repository consists of 2 directories
 
 # Tutero App website [here](https://tuteroapp.herokuapp.com/)
 
-# Tutero Live website [here](https://tuterolive.herokuapp.com//)
+# Tutero Live website [here](https://tuterolive.herokuapp.com/)
 
 # 
 
