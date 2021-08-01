@@ -1,0 +1,46 @@
+a{
+    text-decoration: none;
+}
+
+.nav{
+    &__logo{
+        width: 100%;
+        margin-bottom: 2rem;
+        @include respond(phone){
+            display: none;
+        }
+    }
+    &--icon{
+        display: none;
+        width: 10rem;
+        cursor: pointer;
+    }
+}
+
+#nav{
+    &--open{
+        z-index: 5000;
+        animation: fadein 1s;
+        @include respond(phone){
+            display: block; 
+            position: fixed;
+            top: 5rem;
+            left: 5rem;
+        }
+    }
+
+    &--close{
+        position: relative;
+        // top: 5rem;
+        // left: 5rem;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+        width: 10rem;
+        z-index: 9000;
+        animation: fadein 1s;
+        @include respond(phone){
+            display: none;
+        }
+    }
+}

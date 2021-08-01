@@ -1,0 +1,228 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*css for Room*/
+.message-container{
+    margin-top: 20px;
+    background-color: white;
+    width: 70vw;
+    height: 70vh;
+    padding: 30px;
+    overflow-y: auto;
+    border: 10px shadow black;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0px 0px 20px 10px rgba(51,51,51,0.1);
+
+}
+
+.message-input{
+    box-shadow: 0px 0px 20px 10px rgba(51,51,51,0.1);
+    width: 70vw;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-bottom: 20px;
+    padding: 30px;
+}
+.text-message{
+    padding: 2px;
+    width: 30rem;
+    height: 2.5rem;
+    border: none;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    margin-bottom: 5px;
+    color: black;
+}
+
+
+.img-size{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+/*End css for Room*/
+
+/*Css for message*/
+.my-messages{
+    background-color: #7CFC00;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 30px 0px 20px 0px rgba(51,51,51,0.1);
+}
+
+.recipient-messages{
+    background-color: blue;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: -30px 0px 20px 0px rgba(51,51,51,0.1);
+}
+/*End css for message*/
+
+h2{
+    text-align: center;
+}
+
+/*CSS for index.html*/
+.form{
+    align-content: center;
+    align-items: center;
+}
+
+.search{
+    background-color: #00FF00;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 40vw;
+    border-radius: 20px;
+    font-size: 20px;
+}
+/*.search .icon{
+    padding-top: 2px;
+}*/
+
+
+.card{
+    background-color: #32CD32;
+    height: 20rem;
+    width: 40rem;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px grey;
+    margin-bottom: 100px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.name{
+    display: inline;
+    float: left;
+    padding: 60px 0px 0px 10px;
+    font-size: 20px;
+}
+.price{
+    display: block;
+    float: left;
+    padding: 150px 0px 0px 70px;
+    font-size: 50px;
+    position: absolute;
+    color: white;
+}
+
+.subjects{
+    float: right;
+    width: 150px;
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.star{
+    display: inline;
+    float: left;
+    padding: 108px 0px 0px 0px;
+    font-size: 20px;
+    color: yellow;
+}
+/*End css for index.html*/
+
+/*css for accounts*/
+.welcome{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #00ff26;
+    margin-right: 150px;
+    margin-left: 150px;
+    height: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.button{
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+/*CSS for create-room.html*/
+.center-item-horizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.link-box{
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
+.header{
+    background-color: #000;
+    color: limegreen;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 5px grey;
+    width: 200px;
+}
+.btn{
+    padding: 2px;
+    display: block;
+    width: 6rem;
+    height: 3rem;
+    background-color: #000;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    color: limegreen;
+    font-weight: bold;
+    transition: all .5s;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, 0.1)
+}
+.btn:hover{
+    background-color: limegreen;
+    color: black;
+
+}
+.visit-link-text{
+    margin-top: 60px;
+}

@@ -1,0 +1,10 @@
+.form{
+    text-align: center;
+    margin-bottom: 4rem;
+    &--header{
+        color: $green-bright;
+        font-size: 3.5rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+}

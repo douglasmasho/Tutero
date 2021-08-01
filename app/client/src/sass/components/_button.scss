@@ -1,0 +1,141 @@
+.btn{
+    padding: 2px;
+    display: block;
+    width: 60vw;
+    height: 7vh;
+    background-color: lime;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    color: black;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: green;
+    transition: all .5s;
+}
+
+.button--round{
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all .3s;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    @include respond(phone){
+        width: 3rem * 2;
+        height: 3rem * 2;
+    }
+
+    & img{
+        width: 80%;
+    }
+    &:hover{
+        background-color: green;
+        transform: scale(1.1);
+    }
+    // margin-bottom: 2rem;
+}
+
+.buttonn{
+    display: inline-block;
+    // margin: 1rem 3rem;
+    background-color: $gray;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #00FF2B;
+    border: none;
+    border-radius: 100px;
+    transition: all .3s;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 5px 11px 22px -9px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 5px 11px 22px -9px rgba(0,0,0,0.35);
+    -moz-box-shadow: 5px 11px 22px -9px rgba(0,0,0,0.35);
+    @include respond(phone){
+        margin-top: 10px;
+    }
+
+    &:hover{
+        background-color: #00FF2B !important;
+        color: $gray !important;
+     }
+
+     &:active{
+         background-color: rgb(78, 78, 255) !important;
+     }
+     
+     &--flipped{
+    color:  $gray;
+    background-color: #00FF2B;
+
+    &:hover{
+        background-color:  $gray !important;
+        color: #00FF2B !important;
+    }
+
+     }
+
+     &--nohover{
+        color:  #00FF2B;
+        background-color: $gray ;
+    
+        &:hover{
+            background-color:   $gray!important;
+            color: #00FF2B !important;
+        }
+    
+         }
+}
+
+
+
+
+
+
+.button{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 13px;
+    box-shadow: 0px 0px 20px 5px rgba(51,51,51,0.3);
+    transition: all .5s;
+    font-family: Poppins, "sans-serif";
+    text-transform: capitalize;
+  }
+  
+  .button1{
+      color: white;
+      background-color: #1e1e1e;
+  }
+  
+  .button2{
+      color: black;
+      background-color: #fff;
+  }
+  .button1:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .button2:hover{
+    background-color: #000;
+    color: #fff;
+  }
+  
+//Jesse added this
+/*.button-tutor-card-small-screen{
+    @include respond(phone){
+        margin-top: 6rem;
+    }
+}*/

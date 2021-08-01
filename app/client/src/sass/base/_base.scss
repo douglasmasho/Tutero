@@ -1,0 +1,219 @@
+*,
+*::after,
+*::before{
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html{
+  scroll-behavior: smooth;
+    font-size: 62.5%;
+
+    @include respond(tab-land){
+        font-size: 56.25%;                      //1rem = 9px , 9/16  56.25%        
+      }
+    
+      @include respond(tab-port){
+        font-size: 50%; 
+                                        //1rem = 8px , 8/16  50%
+        } 
+    
+        @include respond(phone){
+          font-size: 30%;  
+        }
+      @include respond(big-desktop){
+        font-size: 75%;                                //1rem = 12px 12/16  75%  
+      }
+
+}
+
+
+/*css for accounts*/
+/*#tutero{
+  
+}*/
+.welcome{
+  // max-width: 90%;
+    margin: 4rem;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #00ff26;
+    height: 100%;
+    padding: 2.5rem;
+    border-radius: 10px;
+}
+/*@media screen and (min-width: 1300px){
+  .welcome{
+      // margin-right: 400px;
+      // margin-left: 400px;
+  }
+}
+@media screen and (max-width: 700px){
+  .welcome{
+      // margin-right: 50px;
+      // margin-left: 50px;
+  }
+}*/
+
+.google{
+  font-size: 30px;
+  background-color: white;
+  margin: 0px 10px;
+  width: 300px;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+.text-size{
+  font-size: 3rem;
+    &-subs{
+      font-size: 2.5rem;
+    }
+    &-levels{
+      font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+  .text-size{
+    font-size: 4rem;
+  }
+}
+.profile_pic{
+  margin-top: 2rem;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.selected-subjects{
+  background-color: #00FF2B;
+  margin: 20px;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10px;
+  position: relative;
+  transition: all .5s;
+  @include respond(phone){
+    height: 40rem;
+    width: 40rem;
+  }
+}
+.selected-subjects:hover {
+  // box-shadow: 16px 21px 41px -11px rgb(0 0 0 / 75%);
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.4);
+  transform: scale(1.1);
+  background-color: green;
+  .tutee-subject-card-names{
+    color: white;
+  }
+}
+// I tried to use :nth-child() but it is not working
+.subjects-parents:nth-child(1){
+  background-color: blue;
+}
+
+.subjects-parents:nth-child(2){
+  background-color: purple;
+}
+.subjects-parents:nth-child(3){
+  background-color: yellow;
+}
+
+.tutee-subject-card-names{
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: #000;
+}
+
+.red-text{
+  color: red;
+  font-size: 2rem;
+  @include respond(phone){
+    font-size: 3rem;
+  }
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.date-time-stamp-bg{
+  background-color: #fff;
+  font-size: 1.2rem;
+  @include respond(tab-land){
+    font-size: 1.5rem;
+  }
+  @include respond(tab-land){
+    font-size: 1.5rem;
+  }
+  @include respond(phone){
+    font-size: 2.5rem;
+  }
+}
+
+
+/*CSS for create-room.html*/
+.center-item-horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+.link:hover{
+  text-decoration: underline;
+}
+.link-box{
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 50%;
+  margin-top: 20px;
+}
+.header{
+  background-color: #000;
+  color: limegreen;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 5px grey;
+  width: 200px;
+}
+.btn{
+  padding: 2px;
+  display: block;
+  width: 6rem;
+  height: 3rem;
+  background-color: #000;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  color: limegreen;
+  font-weight: bold;
+  transition: all .5s;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1)
+}
+.btn:hover{
+  background-color: limegreen;
+  color: black;
+
+}
+.visit-link-text{
+  margin-top: 60px;
+}
+
+.liveLogo{
+  width: 20rem;
+}

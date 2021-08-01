@@ -1,0 +1,51 @@
+.fileshare{
+    &--connect{
+        margin-left: 2rem;
+        color: white;
+        font-size: 2rem;
+    }
+
+    &--container{
+        margin-left: 2rem;
+        margin-top: 2rem;
+        padding: 2rem;
+        height: 100%;
+    }
+
+    &--input{
+        font-size: 1.8rem;
+        color: white;
+        display: block;
+        &::-webkit-file-upload-button{
+            background-color: $green-light;
+            padding: 0.8rem 0.5rem;
+            border-radius: 20px;
+            border: none;
+            font-family: "Raleway"
+
+        }
+    }
+    &--button{
+        background-color: $green-light;
+        padding: 0.8rem 0.5rem;
+        border-radius: 20px;
+        border: none; 
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.4rem;
+        font-family: "Raleway";
+        margin-right: 2rem;
+
+        cursor: pointer;
+        &:hover{
+            background-color: $white;
+        }
+    }
+
+    &--progress{
+        padding: 1rem 2rem;
+        width: 100%;
+        border-radius: 20px;
+        border: none; 
+    }
+}

@@ -1,0 +1,51 @@
+.messageThumb{
+    background-color: white;
+    width: 70%;
+    @include respond(tab-port){
+    width: 90%;
+    }
+    box-shadow: 5px 11px 22px -9px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 5px 11px 22px -9px rgba(0,0,0,0.35);
+    -moz-box-shadow: 5px 11px 22px -9px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    border-radius: 25px;
+
+    &__image{
+        width: 12rem;
+        height: 12rem;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    &__name{
+        font-size: 2.5rem;
+        color: #005437;
+        @include respond(phone){
+            font-size: 3rem;
+            }
+    }
+    &__message{
+        font-size: 1.5rem;
+        @include respond(phone){
+        font-size: 2rem;
+        }
+        white-space: nowrap;
+        width: 20rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__time{
+        font-size: 1.2rem;
+        @include respond(phone){
+            font-size: 2rem;
+            }
+    }
+
+
+}

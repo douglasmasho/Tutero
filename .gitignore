@@ -1,0 +1,94 @@
+h# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+#APP
+
+# dependencies
+/app/node_modules
+/app/.pnp
+/app/.pnp.js
+
+# testing
+/app/coverage
+
+# production
+/app/build
+
+# misc
+/app/.DS_Store
+/app/.env.local
+/app/.env.development.local
+/app/.env.test.local
+/app/.env.production.local
+
+/app/npm-debug.log*
+/app/yarn-debug.log*
+/app/yarn-error.log*
+
+*APP-client
+# dependencies
+/app/client/node_modules
+/app/client/.pnp
+/app/client/.pnp.js
+
+# testing
+/app/client/coverage
+
+# production
+/app/client/build
+
+# misc
+/app/client/.DS_Store
+/app/client/.env.local
+/app/client/.env.development.local
+/app/client/.env.test.local
+/app/client/.env.production.local
+
+/app/client/npm-debug.log*
+/app/client/yarn-debug.log*
+/app/client/yarn-error.log*
+
+
+#LIVE
+/live/node_modules
+/live/.pnp
+/live/.pnp.js
+
+# testing
+/live/coverage
+
+# production
+/live/build
+
+# misc
+/live/.DS_Store
+/live/.env.local
+/live/.env.development.local
+/live/.env.test.local
+/live/.env.production.local
+
+/live/npm-debug.log*
+/live/yarn-debug.log*
+/live/yarn-error.log*
+
+#LIVE-CLIENT
+
+/live/client/node_modules
+/live/client/.pnp
+/live/client/.pnp.js
+
+# testing
+/live/client/coverage
+
+# production
+/live/client/build
+
+# misc
+/live/client/.DS_Store
+/live/client/.env.local
+/live/client/.env.development.local
+/live/client/.env.test.local
+/live/client/.env.production.local
+
+/live/client/npm-debug.log*
+/live/client/yarn-debug.log*
+/live/client/yarn-error.log*

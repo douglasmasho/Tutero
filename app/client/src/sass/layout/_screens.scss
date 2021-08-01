@@ -1,0 +1,25 @@
+.db{
+    &__logo{
+        width: 10rem;
+        @include center;
+        transition: all .3s;
+        animation: fadein .5s forwards;
+    }
+}
+
+.screen{
+    padding: 3rem 1rem 0rem 3rem;
+    min-height: 100vh;
+    animation: fadein .5s forwards;
+    backdrop-filter: blur(2px); // This be the blur
+    &__header{
+        font-size: 3rem;
+        background-color:#00FF2B;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bolder;
+        padding: 5px 10px;
+        margin-bottom: 4rem;
+        border-radius: 10px;
+    }
+}

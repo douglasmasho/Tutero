@@ -1,0 +1,75 @@
+.row{
+    display: flex;
+    padding: 1rem 0.5rem;
+
+    @include respond(phone){
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+
+    &-2{
+        &--child{
+            width: 40%;
+            margin: 2rem;
+            @include respond(phone){
+                width: 100%;
+            }
+
+        }       
+    }
+    &-3{
+        &--child{
+            width: 20%;
+            margin: 2rem;
+            @include respond(phone){
+                width: 100%;
+            }
+        }
+    }
+
+    &-7{
+        &--child{
+            width: 15%;
+            @include respond(phone){
+                width: 100%;
+            }
+        }
+    }
+    &-8{
+        &--child{
+            width: 13%;   
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            @include respond(phone){
+                width: 100%;
+            }
+        }   
+    }
+
+
+    &-9{
+        &--child{
+            width: 6%;
+
+            
+            &:not(:last-child){
+                margin-right: 5px;
+            }
+            @include respond(phone){
+                width: 100%;
+            }
+        }   
+    }
+}
+
+.row-tab-col{
+    @include respond(tab-port){
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

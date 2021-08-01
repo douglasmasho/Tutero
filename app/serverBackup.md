@@ -1,0 +1,57 @@
+## {
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "firebase": "^8.8.0",
+    "lottie-web": "^5.7.12",
+    "moment": "^2.29.1",
+    "nanoid": "^3.1.23",
+    "node-sass": "4.14.1",
+    "react": "^17.0.2",
+    "react-datetime-picker": "^3.3.0",
+    "react-dom": "^17.0.2",
+    "react-firebaseui": "^5.0.2",
+    "react-modal": "^3.14.3",
+    "react-redux": "^7.2.4",
+    "react-redux-firebase": "^3.10.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-simple-star-rating": "^3.0.0",
+    "redux": "^4.1.0",
+    "redux-firestore": "^0.15.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^4.1.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

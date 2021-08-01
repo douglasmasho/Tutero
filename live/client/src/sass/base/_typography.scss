@@ -1,0 +1,26 @@
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+
+.black-text{
+    color: black;
+}
+
+.white-text{
+    color: white;
+}
+
+.normal-text{
+    font-size: 1.5rem !important;
+}
+.bigger-text{
+    font-size: 2rem;
+    @include respond(phone){
+        font-size: 3rem;
+    }
+}
+
+.bold-text{
+    font-weight: bold;
+}

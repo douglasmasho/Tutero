@@ -1,0 +1,48 @@
+.u-margin-bottom{
+    margin-bottom: 2.5rem;
+
+    &-big{
+      margin-bottom: 8rem !important; 
+    }
+    &-small{
+      margin-bottom: 1.5rem !important; 
+    }
+    &-medium{
+      margin-bottom: 5rem !important; 
+    }
+}
+
+.u-margin-top{
+    margin-top: 2.5rem;
+
+    &-big{
+      margin-top: 8rem;
+    }
+}
+
+.u-margin-left{
+  margin-left: 2.5rem;
+
+  &-small{
+    margin-left: 2rem;
+  }
+
+  &-big{
+    margin-left: 8rem;
+  }
+
+}
+
+.u-margin-right{
+  margin-right: 2.5rem;
+
+  &-small{
+    margin-right: 2rem;
+  }
+
+  &-big{
+    margin-right: 8rem;
+  }
+
+}
+

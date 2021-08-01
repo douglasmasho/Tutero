@@ -1,0 +1,83 @@
+
+.cardRtutor{
+    background-color: $light-green;
+    width: 90%;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 10px 12px 31px -15px rgba(0,0,0,0.73);
+-webkit-box-shadow: 10px 12px 31px -15px rgba(0,0,0,0.73);
+-moz-box-shadow: 10px 12px 31px -15px rgba(0,0,0,0.73);
+    margin-bottom: 100px;
+    padding: 1rem;
+
+    &__bottomDiv{
+        padding: 1rem 2rem;
+    }
+
+    &__topDiv{
+        display: flex;
+        margin-top: 3rem;
+        @include respond(phone){
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__info,
+        &__buttons{
+            width: 50%;
+        }
+
+        &__buttons{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 14rem;
+            height: 12rem;
+            position: relative;
+        align-items: center;
+        }
+    }
+
+
+    &__img{
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        background-position: center;
+        background-size: cover;
+    }
+    &__name{
+        display: inline;
+        font-size: 2rem;
+        width: 30%;
+        font-weight: bold;
+        @include respond(phone){
+            font-size: 3rem;
+        }
+    }
+    &__time{
+        font-size: 2rem;
+        font-weight: lighter;
+        @include respond(phone){
+            font-size: 2.3rem;
+        }
+    }
+
+    &__info{
+        font-size: 2rem;
+        font-weight: regular;  
+    }
+
+}
+
+/*End css for index.html*/

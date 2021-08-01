@@ -1,0 +1,123 @@
+.chat{
+    &--container{
+        background-color: $gray-light;
+        padding: 2rem 2rem 0 2rem;
+        margin:  0 2rem;
+        transition: width 1s;  
+        transition-delay: 0.4s;
+        height: 80%
+
+    }
+
+    // &--header{
+    //     font-size: 3rem;
+    //     display: inline-block;
+    //     color: $green-light;
+    //     font-weight: lighter;
+    // }
+
+    &--expandIcon{
+        width: 7rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    &--messagesContainer{
+        overflow-y: scroll;
+        // color: red;
+        height: 85%;
+        scroll-behavior: smooth;
+    }
+
+    &--typing{
+        background-color: $gray-light;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        color: white;
+        border-radius: 30px;
+        margin-bottom: 1rem;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    &--bottom{
+        background-color: $white;
+        border-radius: 20px;
+        position: relative;
+        padding: 1rem 2rem;
+        transition: all .3s;
+    }
+
+    &--input{
+        font-size: 1.6rem;
+        height: 2rem;
+        border: none;
+        font-family: "Raleway";
+        transition: all .3s;
+        width: 90%
+    }
+
+    &--send{
+        width: 4.5rem;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.message{
+    padding: 1.5rem;
+    // max-width: 75%;
+    transition: all .3s;
+    // word-break: break-all;
+
+    &--div{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &:hover .message--delete{
+            opacity: 1;
+        }
+    }
+
+    &__peer{
+        background-color: $white;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 3px;
+        animation: popnslideLeft 0.6s;
+    }
+    &__mine{
+        background-color: $green-extra-light;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 3px;
+        animation: popnslideRight 0.6s;
+        margin-right: 1rem;
+
+        // float: right;
+    }
+
+    &--text{
+        font-weight: 300;
+    }
+
+    &--delete{
+        margin: 1rem;
+        background-color: $green-light;
+        padding: 0.5rem;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all .3s;
+        width: 2.5rem;
+        cursor: pointer
+    }
+}

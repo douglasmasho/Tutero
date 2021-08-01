@@ -1,0 +1,67 @@
+.modal{
+    z-index: 1000;
+    position: fixed;
+    width: 60%;
+    // height: 60%;
+    background-color: $gray-dark;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 10px;
+    transition: all 0.5s;
+    padding: 5rem 6rem;
+    z-index: 8000;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    font-size: 2.5rem;
+    color: $green-light;
+    font-weight: lighter;
+}
+.modal-body{
+    justify-content: space-between;
+}
+.modal-title{
+    font-size: 2.5rem;
+    position: relative;
+    color: white;
+}
+
+.close-button{
+    border: none;
+    background: none;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    &:hover{
+      color: red;
+    }
+}
+
+.overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.overlay.active{
+    z-index: 800;
+    opacity: 1;
+    pointer-events: all;
+    
+}

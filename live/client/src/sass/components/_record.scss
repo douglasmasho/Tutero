@@ -1,0 +1,43 @@
+.record{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 30rem;
+    padding: 1rem;
+    position: relative;
+    left: 0;
+    z-index: 600;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(.51,.02,.31,.99);
+    margin:  2rem;
+    cursor: pointer;
+    background-color: $green-light;
+    font-size: 2.5rem;
+    color: red;
+    text-align: center;
+
+    & ion-icon{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        margin-left: 1.25rem;
+        transform: translateY(-50%); 
+     }
+
+     &--expanded{
+         opacity: 0;
+         transition: inherit;
+         transition-timing-function: inherit;
+         font-size: 2rem;
+         display: inline-block  !important;
+        //  vertical-align: middle;
+     }
+ 
+
+    &:hover{
+        width: 18rem;
+    }
+
+    &:hover &--expanded{
+        opacity:  1;
+    }
+}

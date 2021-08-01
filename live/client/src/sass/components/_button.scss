@@ -1,0 +1,53 @@
+.button{
+    display: inline-block;
+    // margin: 1rem 3rem;
+    background-color: $green-light;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: $gray-dark;
+    border: none;
+    border-radius: 100px;
+    transition: all .5s;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    font-size: 2rem;
+
+    &:hover{
+        background-color: $white !important;
+        color: $gray-dark !important;
+     }
+
+     &__add{
+         position: absolute;
+         width: 3rem;
+         height: 3rem;
+         top: 50%;
+         right: 0;
+         border-radius: 50%;
+         transform: translateY(-50%);
+         padding: 1rem;
+         margin-right: 3rem;
+         background-color: $green-light;
+         border: none;
+         transition: all .5s;
+         cursor: pointer;
+
+         &:hover{
+            background-color: $white !important;
+            transform:  translateY(-50%) scale(1.1);
+         }
+
+         &:active{
+            transform:  translateY(-50%) scale(1);
+            background-color: $green-light !important;
+         }
+
+         & img{
+             width: 3rem;
+         }
+     }
+
+     
+}
+
+
