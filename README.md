@@ -1,5 +1,6 @@
 # Tutero - Tutorials On demand
 ![Banner](./tutero.jpg)
+[Intro Video](https://vimeo.com/581803752)
 
 A marketplace where users can find tutors around namibia. This marketplace is integrated with a virtual tutorial platform where tutorials can happen online, thereby breaking down the distance barrier between tutors and tutees.
 
