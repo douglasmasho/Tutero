@@ -13,7 +13,8 @@ This repository consists of 2 directories
 
 # Tutero Live website [here](https://tuterolive.herokuapp.com/)
 
-# 
+##  Make sure that you allow tutero live to use your microphone and camera, when the prompt appears.
+
 
 ## TLDR: How to run the development builds(only for development purposes)
 ### Important: To run the development build on your machine, you will need to install yarn on your machine.
