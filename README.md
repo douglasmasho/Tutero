@@ -41,6 +41,7 @@ This repository consists of 2 directories
 - Step 5: run the command ```yarn install``` again.
 - Step 5: once yarn is done installing,  run the command ```npm start```.
 - Step 6: Your command line will automatically the application on your default browser, if it does not, visit ```localhost:3000``` on your browser.
+- Step 7: Make sure that you allow tutero live to use your microphone and camera, when the prompt appears.
 
 
 
