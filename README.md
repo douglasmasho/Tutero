@@ -1,5 +1,6 @@
 # Tutero - Tutorials On demand
 ![Banner](./tutero.jpg)
+[Intro Video](https://vimeo.com/581803752)
 
 A marketplace where users can find tutors around namibia. This marketplace is integrated with a virtual tutorial platform where tutorials can happen online, thereby breaking down the distance barrier between tutors and tutees.
 
@@ -12,7 +13,8 @@ This repository consists of 2 directories
 
 # Tutero Live website [here](https://tuterolive.herokuapp.com/)
 
-# 
+##  Make sure that you allow tutero live to use your microphone and camera, when the prompt appears.
+
 
 ## TLDR: How to run the development builds(only for development purposes)
 ### Important: To run the development build on your machine, you will need to install yarn on your machine.
@@ -40,6 +42,7 @@ This repository consists of 2 directories
 - Step 5: run the command ```yarn install``` again.
 - Step 5: once yarn is done installing,  run the command ```npm start```.
 - Step 6: Your command line will automatically the application on your default browser, if it does not, visit ```localhost:3000``` on your browser.
+- Step 7: Make sure that you allow tutero live to use your microphone and camera, when the prompt appears.
 
 
 
@@ -79,6 +82,15 @@ This project works best on Google chrome or any chromium based browser (Microsof
 ## Description
 A Video chat web app for online tutorials and even pair study sessions. This app comes with additional tools for collaboration on top of video chat.
 
+##How to use Tutero Live
+Step 1: Press The "Go live" button
+Step 2: When the loading icon shows, copy the current browser link and open it on another browser tab, or give it to a friend to open it using another machine's browser
+Step 3: Once the other tab or your friend's machine opens the link, the online meeting/session will begin
+
+##Important !!!
+This project works best on Google chrome or any chromium based browser (Microsoft Edge). Tutero Live does not work on mobile devices.
+For the YTshare feature, make sure to use the green controls under the video player, so that you and your peer's videos are in sync.
+
 ## <ins>Features</ins> 
   - LiveChat:  Direct messaging between the peers
   - FileSHare:  File Sharing between the peers
@@ -87,6 +99,3 @@ A Video chat web app for online tutorials and even pair study sessions. This app
 
 ## Technologies used
 React, WebRTC, simple-peer, socket.io, node.js, express, youtube data api, youtube iFrame api, recordRTC, streamsaver.
-
-## Notable:
-This project works best on Google chrome or any chromium based browser (Microsoft Edge). Tutero Live does not work on mobile devices.
