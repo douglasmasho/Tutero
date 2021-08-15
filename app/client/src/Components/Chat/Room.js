@@ -258,7 +258,7 @@ postMessage();
 
                         {/* this is the input👇 */}
                         <center>
-                          <input className="text-message-input" type="text" placeholder="Type a message" onChange={handleChange} required/>
+                          <input className="text-message-input" type="text" placeholder="Type a message" onChange={handleChange} value={message} required/>
                           {/* this is the button👇 */}         
                           <button className="btn" type="submit">Send</button>
                         </center>

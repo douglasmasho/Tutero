@@ -31,9 +31,9 @@ function App() {
             
               )}/>
 
-              <Route exact path="/room/:roomID" render={(routeArgs)=>(
+              {/* <Route exact path="/room/:roomID" render={(routeArgs)=>(
                 <Room routeArgs={routeArgs}/>
-              )}/>
+              )}/> */}
           </div>
     </SocketContextProvider>
 

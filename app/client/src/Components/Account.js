@@ -265,7 +265,7 @@ const Account = (props) => {
                        <form id="tuteeForm" onSubmit={onSubmit}>
                          <div className="center-hrz u-margin-top">
                           <div className="input-group ">
-                            <input type="text" placeholder="Enter Display Name" required id="nameTutee" onChange={handleChange} className="name input-text" required/>
+                            <input type="text" placeholder="Enter Display Name" required id="nameTutee" onChange={handleChange} className="name input-text" value={displayName} required/>
                               <label htmlFor="nameTutee" className="input-label">Enter Display Name</label>   
                               <br />
                           </div>
@@ -351,7 +351,7 @@ const Account = (props) => {
 
                       <h2 className="text-size">Tutor Form</h2>
                       <form id="tutorForm" onSubmit={onSubmit}className="u-margin-top">
-                          <input type="text" placeholder="Enter Display Name" required id="nameTutor" onChange={handleChange} className="name input-text" required/>
+                          <input type="text" placeholder="Enter Display Name" required id="nameTutor" onChange={handleChange} className="name input-text" value={displayName} required/>
                           <label htmlFor="nameTutor" className="input-label ">Enter Display Name</label>
                           <br />
                           <br />
@@ -470,7 +470,7 @@ const Account = (props) => {
                               
                               <br />
                               <br />
-                          <input className="input-text" type="number" placeholder="Enter rate per hour (NAD)(subject to a 10% commission for Tutero)" onChange={(e)=>setRate(e.target.value)} required/>
+                          <input className="input-text" type="number" placeholder="Enter rate per hour (NAD)(subject to a 10% commission for Tutero)" onChange={(e)=>setRate(e.target.value)} value={rate} required/>
                           <br />
                           <button className="button button2" type="submit">Submit</button>
                           
