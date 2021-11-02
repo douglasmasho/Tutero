@@ -9,6 +9,7 @@ import {socketContext} from "../Context/socketContext";
 import Icon from "./Icon";
 import Middle from './Middle';
 import Logo from "../assets/logo.svg";
+import Clipboard from 'react-clipboard.js';
 const worker = new Worker("../worker.js");
 var arrayBufferConcat = require('arraybuffer-concat');
 
@@ -47,7 +48,9 @@ const Room = (props) => {
 
     socketRef.current = useContext(socketContext);
 
-
+    const onSuccess=()=> {
+        alert('link successfully copied');
+      }
     const pauseTrack = useCallback((track)=>{
         switch(track){
             case "video":
@@ -342,6 +345,14 @@ const Room = (props) => {
                     {middle}
                     <div className="video-container" style={containerStyle}>
                         <div className="loading" ref={animContainerLoading}>
+                            <div className="center-hrz--col u-margin-top" style={{backgroundColor: "white", padding: "2rem", borderRadius: "10px"}}>
+                             <h2 className="center-text">Please copy and send the link </h2>      
+                            <Clipboard className="button" data-clipboard-text={`https://tuterolive.herokuapp.com/room/${roomID}`} onSuccess={onSuccess}>
+                            <p>tuterolive.herokuapp.com/room/{roomID}</p>
+                            </Clipboard>
+                            <h2>to the other meeting participant to begin the meeting.</h2>
+                            </div>
+
                         </div>
                             <div className="video-controls center-vert" ref={controlsRef} style={{display: "none"}}>
                                 <div style={controlsDisplay}>
