@@ -1,0 +1,130 @@
+
+/*css for Room*/
+.message-container{
+    scroll-behavior: smooth;
+    position: relative;
+    margin-top: 20px;
+    background-color: white;
+    width: 70vw;
+    height: 70vh;
+    padding: 30px;
+    overflow-y: auto;
+    border: 10px shadow black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0px 0px 20px 10px rgba(51,51,51,0.1);
+
+}
+
+.message-input{
+    box-shadow: 0px 0px 20px 10px rgba(51,51,51,0.1);
+    width: 70vw;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-bottom: 20px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+/*Css for message*/
+.my-messages{
+    padding: 1rem 3rem 1rem 2rem;
+    border-radius: 1rem;
+    // margin-bottom: 20px;
+    @include respond(phone){
+        padding-right: 4.5rem;
+    }
+}
+
+.recipient-messages{
+    padding: 1rem;
+    border-radius: 1rem;
+    // margin-bottom: 20px;
+    @include respond(phone){
+        padding: 2rem;
+    }
+}
+
+
+.my-messages{
+    color: black;
+}
+
+.recipient-messages{
+    color: white;
+}
+
+.message__text{
+    font-size: 1.6rem;
+    @include respond(phone){
+        font-size: 3rem;
+    }
+}
+
+.my-message-container{
+    position: relative;
+    word-break: break-all;
+    min-width: 30%;
+    border-radius: 20px;
+    margin-bottom: 5rem;
+    &:hover .message__delete{
+        opacity: 1;
+    }
+    &--mine{
+        background-color: #7eff42;
+        box-shadow: 30px 0px 20px 0px rgba(51,51,51,0.1);
+    }
+    &--theirs{
+        background-color: forestgreen;
+        box-shadow: -30px 0px 20px 0px rgba(51,51,51,0.1);
+        padding-left: 2rem;
+    }
+}
+
+.message__delete{
+    opacity: 0;
+    transition: all .5s;
+    cursor: pointer;
+    position: absolute;
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.message__photo{
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    &--mine{
+        right: -1.5rem;
+    }
+    &--theirs{
+        left: -1.5rem;
+    }
+}
+
+.message__date{
+    position: absolute;
+    bottom: -1.5rem;
+
+    @include respond(tab-port){
+    bottom: -2rem;
+    }
+    &--mine{
+        left: 0;
+    }
+    &--theirs{
+        right: 1rem;
+    }
+    @include respond(phone){
+        font-size: 2rem;
+        bottom: -3.5rem;
+    }
+}
+/*End css for message*/

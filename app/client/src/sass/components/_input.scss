@@ -1,0 +1,177 @@
+.input{
+    &-date{
+        padding: 10px 20px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        color: red;
+        font-weight: bolder;
+    }
+
+
+    &-text{
+        padding: 10px 20px;
+        width: 80%;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        @include respond(phone){
+            font-size: 3rem;
+        }
+
+
+        &:placeholder-shown + label{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all .2s;
+        }
+    }
+
+    &-label{
+        display: block;
+        color: black;
+        font-size: 1.5rem;
+        @include respond(phone){
+            font-size: 3rem;
+        }
+    }
+    &-checkbox{
+        // display: none;
+        
+        &-group{
+        display: inline-block;
+        }
+        &-label{
+            cursor: pointer;
+            position: relative;
+            padding-left: 5rem;
+        }
+        &-button{
+            height: 2rem;
+            width: 2rem;
+            border: 5px solid $blue-light;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: -.4rem;
+           
+    
+    
+            &::after{
+                content:"";
+                height: 1rem;
+                width: 1rem;
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgb(255, 0, 0);
+                opacity: 0;
+                transition: all .2s;
+    
+            }
+        }
+    }
+    &-group{
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+
+    &-checkbox:checked ~ &-checkbox-label &-checkbox-button::after {
+        opacity: 1;
+    }
+}
+
+.radio{
+    display: none;
+}
+
+.radio-field{
+    display: flex;
+    justify-content: center;
+}
+
+.radio-field input[type="radio"]{
+    opacity: 0;
+    width: 0;
+
+}
+
+.radio:checked + label{
+    color: black;
+    /* background-position: 100%; */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.568);
+    background-color: #00FF2B;
+    transform: scale(0.9);
+}
+
+.radioLabel-active{
+    color: white;
+    /* background-position: 100%; */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.568);
+    background-color: $red-primary;
+    transform: scale(0.9);
+}
+
+.radio-label:focus {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.radio-label{
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 1.5rem;
+    @include respond(phone){
+    font-size: 2.5rem;
+    }
+    display: inline-block;
+    text-transform: uppercase;
+    color: #00FF2B;
+    background-color: #1e1e1e;
+    /* background-image: linear-gradient(120deg,#15003500 50%, #4204a0 80%, #150035 100%); */
+    -webkit-box-shadow: 9px 7px 26px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 7px 26px -11px rgba(0,0,0,0.75);
+    box-shadow: 9px 7px 26px -11px rgba(0,0,0,0.75);
+
+    padding: 12px 25px;
+    // border-radius: 30px;
+    transition: all 0.5s;
+    /* background-size: 250%; */
+    backface-visibility: hidden;
+
+}
+
+.radio-label:hover{
+    -webkit-box-shadow: 16px 21px 41px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px 21px 41px -11px rgba(0,0,0,0.75);
+    box-shadow: 16px 21px 41px -11px rgba(0,0,0,0.75);
+    transform: scale(1.1);
+    color: white;
+}
+
+/*I added this class*/
+.text-input{
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 70%;
+    margin: 10px 0;
+    box-shadow: 0px 0px 20px 5px rgba(51,51,51,0.3);
+}
+
+
+.text-message-input{
+    padding: 0px 5px 0px 10px;
+    width: 60vw;
+    height: 5vh;
+    border: none;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    margin-bottom: 5px;
+    color: black;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tutero-live",
+  "version": "1.0.0",
+  "description": "Online tutorial interface",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Douglas Mashonganyika",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "socket.io": "^2.3.0",
+    "streamsaver": "^2.0.4",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

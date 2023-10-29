@@ -1,0 +1,87 @@
+.liveCanvas{
+    &--container{
+        width: 100%;
+        height: 50rem;
+        overflow: scroll;
+        border-radius: 20px;
+
+    }
+    &--controls{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        margin: 1rem 4rem;
+        display: flex;
+        // flex-direction: column;
+        background-color: white;
+        justify-content: space-evenly;
+        transition: all .5s;
+        // border-radius: 20px;
+        // -webkit-box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.1);
+        // -moz-box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.1);
+        // box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.1);
+        // height: 100%;
+        & img{
+            width:2rem;
+        }
+        & button{
+        //    margin-bottom: 3rem;
+        // background-color: #2ffb52;
+        transition: all .2s;
+           height: 3.5rem;
+           width: 3.5rem;
+           border-radius: 50%;
+           border: none;
+           padding: 0.5rem;
+           -webkit-box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.1);
+           -moz-box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.1);
+           box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.1);
+           cursor: pointer;
+           &:active{
+               transform: scale(0.9);
+               background-color: $green-light;
+               -webkit-box-shadow: none;
+               -moz-box-shadow:none;
+               box-shadow:none;
+           }
+        }
+    }
+
+}
+.colors-active{
+    border: rgb(255, 77, 240) inset 3px !important;
+}
+
+#canvas{
+    // border: 2px solid rgb(0, 255, 55);
+    cursor: crosshair;
+    position: relative;
+    border-radius: 20px;
+}
+
+
+.LC-active{
+    transform: scale(0.9) !important;
+    background-color: $green-light !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow:none !important;
+    box-shadow:none !important;
+}
+
+.colors-gone{
+    transform: scale(0) !important;
+}
+
+.colors-visible{
+    transform: unset;
+}
+
+.rc-color-picker-wrap{
+    @include center;
+    opacity: 0;
+}
+
+
+

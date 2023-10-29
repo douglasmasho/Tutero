@@ -1,0 +1,34 @@
+@keyframes popnslideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(30%);
+
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes popnslideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-30%);
+
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes popin{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+

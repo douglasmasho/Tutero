@@ -1,0 +1,82 @@
+.grid{
+  display: grid;
+  padding: 4rem;
+  
+  &-2{
+      grid-template-columns: repeat(2, 1fr);
+      @include respond(phone){  
+          grid-template-columns: repeat(1, 1fr);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+      &--child{
+          margin: 3rem;
+          padding: 2rem;
+          border-radius: 15px; 
+          height: 40rem;     
+          @include respond(phone){
+          height: 50rem;     
+          }
+      }
+  }
+
+  &-3{
+      grid-template-columns: repeat(3, 1fr);
+      @include respond(tab-port){  
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include respond(phone){  
+          grid-template-columns: repeat(1, 1fr);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      // grid-gap: 10rem
+      &--child{
+          margin: 4rem;
+          border-radius: 15px;
+          background-color: white;
+      }
+  }
+
+
+  &-4{
+    grid-template-columns: repeat(4, 1fr);
+    @include respond(tab-port){  
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include respond(phone){  
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    // grid-gap: 10rem
+    &--child{
+        margin: 4rem;
+        border-radius: 15px;
+        background-color: white;
+    }
+}
+
+&-5{
+  grid-template-columns: repeat(5, 1fr);
+  @include respond(tab-port){  
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(phone){  
+      grid-template-columns: repeat(1, 1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  // grid-gap: 10rem
+  &--child{
+      margin: 4rem;
+      border-radius: 15px;
+      background-color: white;
+  }
+}
+}

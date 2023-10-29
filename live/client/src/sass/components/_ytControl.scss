@@ -1,0 +1,64 @@
+.ytControl{
+    background-color: $gray-light;
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    padding: 2rem;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.24);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.24);
+    position: relative;
+    padding: 1rem;
+    transition: all .3s, 
+                transform .3s;
+    cursor: pointer;
+    font-size: 2rem;
+    color: $green-bright;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &:hover{
+    background-color: $white;
+        color: $black;
+    }
+
+    &:active{
+        transform: scale(0.9);
+        color: $black;
+    background-color: $white;
+
+    }
+
+
+    &.activePP{
+        background-color: $white;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+        color: $black;
+        &:hover{
+            color: $black;
+        }
+    }
+    &.activeMU{
+        background-color: $white;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;  
+        color: $black;
+        &:hover{
+            color: $black;
+        }
+    }
+
+    &--icon{
+        width: 2rem;
+        position: absolute;
+        @include center;
+        font-weight: 1 !important;
+    }
+}

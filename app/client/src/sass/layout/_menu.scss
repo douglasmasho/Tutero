@@ -1,0 +1,126 @@
+.menu{
+
+    &__icon{
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: #00FF2B;
+
+    }
+    &--container{
+        width: 100%;
+        // background-color: red;
+        
+    }
+    &--sub{
+        display: block;
+        padding: 16px 20px;
+        background: $gray;
+        color: white;
+        position: relative;
+        font-size: 1.5rem;
+        transition: all .3s;
+        cursor: pointer;
+        @include respond(phone){
+            display: none;
+            font-size: 3rem;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: $gray;
+            left: 20px;
+            bottom: -7px;
+            transform: rotate(45deg);
+        }
+        &:hover{
+            background: $gray-light;
+        }
+
+        & img{
+            margin-right: 10px;
+            width: 3rem;
+        }
+    }
+
+    &--content{
+        // background-color: red;
+        height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    &--link{
+        display: block;
+        font-size: 1.3rem;
+        display: block;
+        padding: 16px 26px;
+        color: black;
+        // margin: 4px 0;
+        position: relative;
+        transition: all .4s cubic-bezier(1,0,0,1) .2s;
+        z-index: 1000;
+        @include respond(phone){
+           font-size: 2.5rem;
+        }
+
+        &:before{
+            // content: "";
+            // position: absolute;
+            // width: 6px;
+            // height: 100%;
+            // background: #ffffff;
+            // left: 0;
+            // top: 0;
+            // transition: 0.3s;
+            // opacity: 0;        
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #5EFF7A;
+            transform: scaleY(0);
+            transition: transform .2s,
+                        width .4s cubic-bezier(1,0,0,1) .2s,
+                        background-color .1s;
+            z-index: -5;  
+
+        }
+
+
+        &:hover{
+            color: black;
+            &:before{
+            // opacity: 1;
+            transform: scaleY(1);
+            width: 100%; 
+            }
+        }
+    }
+
+
+
+}
+
+.checkBox{
+    display: none;
+}
+
+#smenu-1:checked + .menu--content__1{
+    height: 150px;
+    @include respond(tab-port){
+     height: 180px;
+    }
+}
+#smenu-2:checked + .menu--content__2 {
+    height: 100px;
+}
+
+.activeLink{
+    background-color: #009245;
+    color: white;
+}
+

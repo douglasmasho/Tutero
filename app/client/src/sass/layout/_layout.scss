@@ -1,0 +1,82 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    @include respond(phone){
+    display: unset;
+    }
+}
+
+
+#navigation{
+    width: 15%;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 19px 2px 21px -11px rgba(0,0,0,0.46);
+-webkit-box-shadow: 19px 2px 21px -11px rgba(0,0,0,0.46);
+-moz-box-shadow: 19px 2px 21px -11px rgba(0,0,0,0.46);
+    @include respond(phone){
+        width: 0%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 7000;
+    }
+}
+#dashboard{
+    width: 85%;
+    background-image: url(../../assets/abstractbg.png);
+    overflow-y: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    /*Scrollbar customization*/
+              /* width */
+              ::-webkit-scrollbar {
+                width: 10px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey; 
+                background-color: #fff;
+              }
+               
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: #32CD32; 
+                height: 200px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: green; 
+              }
+    @include respond(phone){
+        width: 90%;
+        padding: 5rem;
+        min-height: 100vh;
+    }
+}
+/*Scrollbar customization*/
+              /* width */
+              ::-webkit-scrollbar {
+                width: 10px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey; 
+                background-color: #fff;
+              }
+               
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: #32CD32; 
+                height: 100px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: green; 
+              }

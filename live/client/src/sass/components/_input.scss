@@ -1,0 +1,21 @@
+.input{
+    &--text{
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        width: 50%;
+        border: none;
+        font-size: 1.6rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+    }
+
+    &--number{
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        width: 10rem;
+        margin-right: 1rem;
+        border: none;
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+    }
+}

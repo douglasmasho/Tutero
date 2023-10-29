@@ -1,0 +1,47 @@
+.screenshare{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 30rem;
+    
+    padding: 1rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(.51,.02,.31,.99);
+    margin:  2rem;
+    cursor: pointer;
+    background-color: $green-light;
+   
+    & img{
+       width: 2.5rem; 
+       position: absolute;
+       top: 50%;
+       left: 0%;
+       margin-left: 1.25rem;
+       transform: translateY(-50%);
+       transition: all .5s;
+    }
+
+
+    &:hover{
+        width: 20rem;
+        // height: 10rem;
+        // border-radius: 10px;
+    }
+
+    &--expanded{
+        opacity: 0;
+        transition: inherit;
+        transition-timing-function: inherit;
+        font-size: 2rem;
+        height: 100%
+    }
+
+    &:hover &--expanded{
+        opacity:  1;
+        margin-left: 5rem;
+    }
+    
+}
