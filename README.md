@@ -82,12 +82,12 @@ This project works best on Google chrome or any chromium based browser (Microsof
 ## Description
 A Video chat web app for online tutorials and even pair study sessions. This app comes with additional tools for collaboration on top of video chat.
 
-##How to use Tutero Live
+## How to use Tutero Live
 Step 1: Press The "Go live" button
 Step 2: When the loading icon shows, copy the current browser link and open it on another browser tab, or give it to a friend to open it using another machine's browser
 Step 3: Once the other tab or your friend's machine opens the link, the online meeting/session will begin
 
-##Important !!!
+## Important !!!
 This project works best on Google chrome or any chromium based browser (Microsoft Edge). Tutero Live does not work on mobile devices.
 For the YTshare feature, make sure to use the green controls under the video player, so that you and your peer's videos are in sync.
 
